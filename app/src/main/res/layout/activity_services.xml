@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- EditText pour la recherche en haut de la page -->
+    <EditText
+        android:id="@+id/searchServiceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rechercher un service"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- RecyclerView pour afficher la liste des services -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/servicesRecyclerView"
+        android:layout_width="384dp"
+        android:layout_height="582dp" />
+
+    <!-- TextView pour afficher les erreurs -->
+    <TextView
+        android:id="@+id/errorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Erreur lors du chargement des services"
+        android:visibility="gone" />
+
+    <!-- Bouton pour créer un service -->
+    <Button
+        android:id="@+id/createServiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="Créer un service"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>
